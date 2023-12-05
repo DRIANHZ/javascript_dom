@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header id="header">
+        <h1 id="judul">Judul Halaman</h1>
+        <nav>
+            <ul id="">
+                <li><a href="#">Beranda</a></li>
+                <li id="item2"><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <article id="ibu1">
+            <h2 id="content">Artikel Pertama</h2>
+            <p id="anak1">Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+        </article>
+        <article id="ibu2">
+            <h2 id="anak2">Artikel Kedua</h2>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hak Cipta. Dibuat dengan <span class="heart">&hearts;</span> di Dunia Web.</p>
+    </footer>
+
+    <ol id="bapakOL">
+        <li>ke 1</li>
+        <li>ke 2</li>
+        <li>ke 3</li>
+    </ol>
+    <script>
+     document.getElementById('judul').innerHTML = '<p> bjirian</p>';
+    document.getElementById('judul').style.color = 'tomato';
+     var content = document.getElementById('content');
+
+     content.style.background = 'aqua';
+        //metode childre
+    let item = document.getElementById('header').children[1].children[0].children[0];
+    item.innerHTML = 'anjayyyy';
+
+    document.getElementById('header').children[1].children[0].style.display = 'flex';
+ 
+
+
+
+
+    //metode siblings
+    let item2 = document.getElementById('item2');
+    let item1 = document.getElementById('item2').previousElementSibling;
+
+    item1.style.background = 'gold';
+
+    item2.nextElementSibling.innerHTML = 'ini item3 yang di dapat dari nextsibling';
+
+
+    //metode parent dan child
+    let ibu1 = document.getElementById('anak1').parentElement;
+    ibu1.style.background = 'tomato';
+
+    document.getElementById('ibu2').children[0].style.background = 'gold';
+
+
+    let anak = document.getElementById('bapakOl').children[0].style.color = 'aqua';
+    </script>
+</body>
+</html>

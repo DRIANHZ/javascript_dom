@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <h1 class="judul">Judul Halaman</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article class="content">
+            <h2>Artikel Pertama</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+        </article>
+        <article class="content">
+            <h2>Artikel Kedua</h2>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hak Cipta. Dibuat dengan <span class="heart">&hearts;</span> di Dunia Web.</p>
+    </footer>
+    <script>
+        
+        let ctn = document.getElementsByClassName('content');
+
+        ctn[0].style.background = 'red';
+
+
+        document.getElementsByClassName('judul')[0].innerText = 'bjirrrr';
+
+        document.getElementsByClassName('content')[0].children[0].innerText = 'ini artikel pertama';
+
+        let item = document.getElementsByClassName('content')[0];
+        item.nextElementSibling.style.color = 'gold';
+
+    </script>
+</body>
+</html>

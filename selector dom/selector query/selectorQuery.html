@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header id="kepala1">
+        <h1 class="judul">Judul Halaman</h1>
+        <nav id="navbar1">
+            <ul>
+                <li class="item1"><a href="#">Beranda</a></li>
+                <li class="item2"><a href="#">Tentang Kami</a></li>
+                <li class="item3"><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="kepala2">
+        <article class="content">
+            <h2>Artikel Pertama</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+        </article>
+        <article class="content">
+            <h2>Artikel Kedua</h2>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+        </article>
+    </section>
+
+    <footer id="kepala3">
+        <p>&copy; 2023 Hak Cipta. Dibuat dengan <span class="heart">&hearts;</span> di Dunia Web.</p>
+    </footer>
+    <script>
+        let kepala1 = document.querySelector('#kepala1');
+        kepala1.style.color = 'red';
+
+        kepala1.querySelector('h1').style.color = 'gold';
+
+        kepala1.querySelector('nav ul').style.display = 'flex';
+
+        let item = kepala1.querySelectorAll('nav ul li');
+        item.forEach(function(itm){
+            itm.style.margin = '10px'
+        })
+
+
+        let kepala2 = document.querySelector('#kepala2');
+        let anak2 = kepala2.children[1];
+
+        anak2.style.color = 'gold';
+
+        let ctn = document.querySelectorAll('.content');
+        ctn.forEach(function(c){
+            c.style.background = 'green';
+        })
+
+
+        let kepala3 = document.querySelector('#kepala3');
+        kepala3.style.display = 'none'
+
+
+
+
+        </script>
+</body>
+</html>
