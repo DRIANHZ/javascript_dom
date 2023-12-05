@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="ph" value="tolong ubah ini">
+    <input type="text" id="nilai">
+    <button onclick="ubah()">ubah</button>
+    <script>
+        
+        function ubah(){
+            let ph = document.getElementById('ph');
+            let nilai = document.getElementById('nilai').value;
+            ph.value = nilai;
+        }
+    </script>
+</body>
+</html>
